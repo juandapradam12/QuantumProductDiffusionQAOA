@@ -1,0 +1,24 @@
+[project]
+name = "product-diffusion"
+version = "1.0.0"
+description = "Minimum-hire product diffusion on a friendship network, solved as a dominating-set Hamiltonian with QAOA."
+requires-python = ">=3.11"
+dependencies = [
+    "matplotlib==3.11.2",
+    "numpy==2.5.4",
+    "qiskit==2.6.0",
+    "scipy==1.18.1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest==9.1.1"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

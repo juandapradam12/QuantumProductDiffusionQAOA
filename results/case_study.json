@@ -1,0 +1,3634 @@
+{
+  "weight": 1.0,
+  "penalty": 2.0,
+  "seed": 7,
+  "restarts": 40,
+  "maxiter": 250,
+  "names": [
+    "Mario",
+    "Sarah",
+    "Ra\u00fal",
+    "Ana",
+    "Enrique",
+    "Sa\u00fal"
+  ],
+  "edges": [
+    [
+      "Mario",
+      "Sarah"
+    ],
+    [
+      "Mario",
+      "Ra\u00fal"
+    ],
+    [
+      "Mario",
+      "Ana"
+    ],
+    [
+      "Enrique",
+      "Sarah"
+    ],
+    [
+      "Enrique",
+      "Ra\u00fal"
+    ],
+    [
+      "Sa\u00fal",
+      "Ana"
+    ]
+  ],
+  "closed_neighborhoods": {
+    "Mario": [
+      "Mario",
+      "Sarah",
+      "Ra\u00fal",
+      "Ana"
+    ],
+    "Sarah": [
+      "Mario",
+      "Sarah",
+      "Enrique"
+    ],
+    "Ra\u00fal": [
+      "Mario",
+      "Ra\u00fal",
+      "Enrique"
+    ],
+    "Ana": [
+      "Mario",
+      "Ana",
+      "Sa\u00fal"
+    ],
+    "Enrique": [
+      "Sarah",
+      "Ra\u00fal",
+      "Enrique"
+    ],
+    "Sa\u00fal": [
+      "Ana",
+      "Sa\u00fal"
+    ]
+  },
+  "plans": [
+    {
+      "bits": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "bitstring": "000000",
+      "hired": [],
+      "cost": 12.0,
+      "dominating": false,
+      "optimal": false
+    },
+    {
+      "bits": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "bitstring": "000001",
+      "hired": [
+        "Mario"
+      ],
+      "cost": 5.0,
+      "dominating": false,
+      "optimal": false
+    },
+    {
+      "bits": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "bitstring": "000010",
+      "hired": [
+        "Sarah"
+      ],
+      "cost": 7.0,
+      "dominating": false,
+      "optimal": false
+    },
+    {
+      "bits": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "bitstring": "000011",
+      "hired": [
+        "Mario",
+        "Sarah"
+      ],
+      "cost": 4.0,
+      "dominating": false,
+      "optimal": false
+    },
+    {
+      "bits": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "bitstring": "000100",
+      "hired": [
+        "Ra\u00fal"
+      ],
+      "cost": 7.0,
+      "dominating": false,
+      "optimal": false
+    },
+    {
+      "bits": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "bitstring": "000101",
+      "hired": [
+        "Mario",
+        "Ra\u00fal"
+      ],
+      "cost": 4.0,
+      "dominating": false,
+      "optimal": false
+    },
+    {
+      "bits": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "bitstring": "000110",
+      "hired": [
+        "Sarah",
+        "Ra\u00fal"
+      ],
+      "cost": 6.0,
+      "dominating": false,
+      "optimal": false
+    },
+    {
+      "bits": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "bitstring": "000111",
+      "hired": [
+        "Mario",
+        "Sarah",
+        "Ra\u00fal"
+      ],
+      "cost": 5.0,
+      "dominating": false,
+      "optimal": false
+    },
+    {
+      "bits": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "bitstring": "001000",
+      "hired": [
+        "Ana"
+      ],
+      "cost": 7.0,
+      "dominating": false,
+      "optimal": false
+    },
+    {
+      "bits": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "bitstring": "001001",
+      "hired": [
+        "Mario",
+        "Ana"
+      ],
+      "cost": 4.0,
+      "dominating": false,
+      "optimal": false
+    },
+    {
+      "bits": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "bitstring": "001010",
+      "hired": [
+        "Sarah",
+        "Ana"
+      ],
+      "cost": 4.0,
+      "dominating": false,
+      "optimal": false
+    },
+    {
+      "bits": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "bitstring": "001011",
+      "hired": [
+        "Mario",
+        "Sarah",
+        "Ana"
+      ],
+      "cost": 3.0,
+      "dominating": true,
+      "optimal": false
+    },
+    {
+      "bits": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "bitstring": "001100",
+      "hired": [
+        "Ra\u00fal",
+        "Ana"
+      ],
+      "cost": 4.0,
+      "dominating": false,
+      "optimal": false
+    },
+    {
+      "bits": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "bitstring": "001101",
+      "hired": [
+        "Mario",
+        "Ra\u00fal",
+        "Ana"
+      ],
+      "cost": 3.0,
+      "dominating": true,
+      "optimal": false
+    },
+    {
+      "bits": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "bitstring": "001110",
+      "hired": [
+        "Sarah",
+        "Ra\u00fal",
+        "Ana"
+      ],
+      "cost": 3.0,
+      "dominating": true,
+      "optimal": false
+    },
+    {
+      "bits": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "bitstring": "001111",
+      "hired": [
+        "Mario",
+        "Sarah",
+        "Ra\u00fal",
+        "Ana"
+      ],
+      "cost": 4.0,
+      "dominating": true,
+      "optimal": false
+    },
+    {
+      "bits": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "bitstring": "010000",
+      "hired": [
+        "Enrique"
+      ],
+      "cost": 7.0,
+      "dominating": false,
+      "optimal": false
+    },
+    {
+      "bits": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "bitstring": "010001",
+      "hired": [
+        "Mario",
+        "Enrique"
+      ],
+      "cost": 4.0,
+      "dominating": false,
+      "optimal": false
+    },
+    {
+      "bits": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "bitstring": "010010",
+      "hired": [
+        "Sarah",
+        "Enrique"
+      ],
+      "cost": 6.0,
+      "dominating": false,
+      "optimal": false
+    },
+    {
+      "bits": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "bitstring": "010011",
+      "hired": [
+        "Mario",
+        "Sarah",
+        "Enrique"
+      ],
+      "cost": 5.0,
+      "dominating": false,
+      "optimal": false
+    },
+    {
+      "bits": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "bitstring": "010100",
+      "hired": [
+        "Ra\u00fal",
+        "Enrique"
+      ],
+      "cost": 6.0,
+      "dominating": false,
+      "optimal": false
+    },
+    {
+      "bits": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "bitstring": "010101",
+      "hired": [
+        "Mario",
+        "Ra\u00fal",
+        "Enrique"
+      ],
+      "cost": 5.0,
+      "dominating": false,
+      "optimal": false
+    },
+    {
+      "bits": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "bitstring": "010110",
+      "hired": [
+        "Sarah",
+        "Ra\u00fal",
+        "Enrique"
+      ],
+      "cost": 7.0,
+      "dominating": false,
+      "optimal": false
+    },
+    {
+      "bits": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "bitstring": "010111",
+      "hired": [
+        "Mario",
+        "Sarah",
+        "Ra\u00fal",
+        "Enrique"
+      ],
+      "cost": 6.0,
+      "dominating": false,
+      "optimal": false
+    },
+    {
+      "bits": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "bitstring": "011000",
+      "hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "cost": 2.0,
+      "dominating": true,
+      "optimal": true
+    },
+    {
+      "bits": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "bitstring": "011001",
+      "hired": [
+        "Mario",
+        "Ana",
+        "Enrique"
+      ],
+      "cost": 3.0,
+      "dominating": true,
+      "optimal": false
+    },
+    {
+      "bits": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "bitstring": "011010",
+      "hired": [
+        "Sarah",
+        "Ana",
+        "Enrique"
+      ],
+      "cost": 3.0,
+      "dominating": true,
+      "optimal": false
+    },
+    {
+      "bits": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "bitstring": "011011",
+      "hired": [
+        "Mario",
+        "Sarah",
+        "Ana",
+        "Enrique"
+      ],
+      "cost": 4.0,
+      "dominating": true,
+      "optimal": false
+    },
+    {
+      "bits": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "bitstring": "011100",
+      "hired": [
+        "Ra\u00fal",
+        "Ana",
+        "Enrique"
+      ],
+      "cost": 3.0,
+      "dominating": true,
+      "optimal": false
+    },
+    {
+      "bits": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "bitstring": "011101",
+      "hired": [
+        "Mario",
+        "Ra\u00fal",
+        "Ana",
+        "Enrique"
+      ],
+      "cost": 4.0,
+      "dominating": true,
+      "optimal": false
+    },
+    {
+      "bits": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "bitstring": "011110",
+      "hired": [
+        "Sarah",
+        "Ra\u00fal",
+        "Ana",
+        "Enrique"
+      ],
+      "cost": 4.0,
+      "dominating": true,
+      "optimal": false
+    },
+    {
+      "bits": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "bitstring": "011111",
+      "hired": [
+        "Mario",
+        "Sarah",
+        "Ra\u00fal",
+        "Ana",
+        "Enrique"
+      ],
+      "cost": 5.0,
+      "dominating": true,
+      "optimal": false
+    },
+    {
+      "bits": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "bitstring": "100000",
+      "hired": [
+        "Sa\u00fal"
+      ],
+      "cost": 9.0,
+      "dominating": false,
+      "optimal": false
+    },
+    {
+      "bits": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "bitstring": "100001",
+      "hired": [
+        "Mario",
+        "Sa\u00fal"
+      ],
+      "cost": 4.0,
+      "dominating": false,
+      "optimal": false
+    },
+    {
+      "bits": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "bitstring": "100010",
+      "hired": [
+        "Sarah",
+        "Sa\u00fal"
+      ],
+      "cost": 4.0,
+      "dominating": false,
+      "optimal": false
+    },
+    {
+      "bits": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "bitstring": "100011",
+      "hired": [
+        "Mario",
+        "Sarah",
+        "Sa\u00fal"
+      ],
+      "cost": 3.0,
+      "dominating": true,
+      "optimal": false
+    },
+    {
+      "bits": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "bitstring": "100100",
+      "hired": [
+        "Ra\u00fal",
+        "Sa\u00fal"
+      ],
+      "cost": 4.0,
+      "dominating": false,
+      "optimal": false
+    },
+    {
+      "bits": [
+        1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "bitstring": "100101",
+      "hired": [
+        "Mario",
+        "Ra\u00fal",
+        "Sa\u00fal"
+      ],
+      "cost": 3.0,
+      "dominating": true,
+      "optimal": false
+    },
+    {
+      "bits": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "bitstring": "100110",
+      "hired": [
+        "Sarah",
+        "Ra\u00fal",
+        "Sa\u00fal"
+      ],
+      "cost": 3.0,
+      "dominating": true,
+      "optimal": false
+    },
+    {
+      "bits": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "bitstring": "100111",
+      "hired": [
+        "Mario",
+        "Sarah",
+        "Ra\u00fal",
+        "Sa\u00fal"
+      ],
+      "cost": 4.0,
+      "dominating": true,
+      "optimal": false
+    },
+    {
+      "bits": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "bitstring": "101000",
+      "hired": [
+        "Ana",
+        "Sa\u00fal"
+      ],
+      "cost": 8.0,
+      "dominating": false,
+      "optimal": false
+    },
+    {
+      "bits": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "bitstring": "101001",
+      "hired": [
+        "Mario",
+        "Ana",
+        "Sa\u00fal"
+      ],
+      "cost": 5.0,
+      "dominating": false,
+      "optimal": false
+    },
+    {
+      "bits": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "bitstring": "101010",
+      "hired": [
+        "Sarah",
+        "Ana",
+        "Sa\u00fal"
+      ],
+      "cost": 5.0,
+      "dominating": false,
+      "optimal": false
+    },
+    {
+      "bits": [
+        1,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "bitstring": "101011",
+      "hired": [
+        "Mario",
+        "Sarah",
+        "Ana",
+        "Sa\u00fal"
+      ],
+      "cost": 4.0,
+      "dominating": true,
+      "optimal": false
+    },
+    {
+      "bits": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "bitstring": "101100",
+      "hired": [
+        "Ra\u00fal",
+        "Ana",
+        "Sa\u00fal"
+      ],
+      "cost": 5.0,
+      "dominating": false,
+      "optimal": false
+    },
+    {
+      "bits": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "bitstring": "101101",
+      "hired": [
+        "Mario",
+        "Ra\u00fal",
+        "Ana",
+        "Sa\u00fal"
+      ],
+      "cost": 4.0,
+      "dominating": true,
+      "optimal": false
+    },
+    {
+      "bits": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "bitstring": "101110",
+      "hired": [
+        "Sarah",
+        "Ra\u00fal",
+        "Ana",
+        "Sa\u00fal"
+      ],
+      "cost": 4.0,
+      "dominating": true,
+      "optimal": false
+    },
+    {
+      "bits": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "bitstring": "101111",
+      "hired": [
+        "Mario",
+        "Sarah",
+        "Ra\u00fal",
+        "Ana",
+        "Sa\u00fal"
+      ],
+      "cost": 5.0,
+      "dominating": true,
+      "optimal": false
+    },
+    {
+      "bits": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "bitstring": "110000",
+      "hired": [
+        "Enrique",
+        "Sa\u00fal"
+      ],
+      "cost": 4.0,
+      "dominating": false,
+      "optimal": false
+    },
+    {
+      "bits": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "bitstring": "110001",
+      "hired": [
+        "Mario",
+        "Enrique",
+        "Sa\u00fal"
+      ],
+      "cost": 3.0,
+      "dominating": true,
+      "optimal": false
+    },
+    {
+      "bits": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "bitstring": "110010",
+      "hired": [
+        "Sarah",
+        "Enrique",
+        "Sa\u00fal"
+      ],
+      "cost": 3.0,
+      "dominating": true,
+      "optimal": false
+    },
+    {
+      "bits": [
+        1,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "bitstring": "110011",
+      "hired": [
+        "Mario",
+        "Sarah",
+        "Enrique",
+        "Sa\u00fal"
+      ],
+      "cost": 4.0,
+      "dominating": true,
+      "optimal": false
+    },
+    {
+      "bits": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "bitstring": "110100",
+      "hired": [
+        "Ra\u00fal",
+        "Enrique",
+        "Sa\u00fal"
+      ],
+      "cost": 3.0,
+      "dominating": true,
+      "optimal": false
+    },
+    {
+      "bits": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "bitstring": "110101",
+      "hired": [
+        "Mario",
+        "Ra\u00fal",
+        "Enrique",
+        "Sa\u00fal"
+      ],
+      "cost": 4.0,
+      "dominating": true,
+      "optimal": false
+    },
+    {
+      "bits": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "bitstring": "110110",
+      "hired": [
+        "Sarah",
+        "Ra\u00fal",
+        "Enrique",
+        "Sa\u00fal"
+      ],
+      "cost": 4.0,
+      "dominating": true,
+      "optimal": false
+    },
+    {
+      "bits": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "bitstring": "110111",
+      "hired": [
+        "Mario",
+        "Sarah",
+        "Ra\u00fal",
+        "Enrique",
+        "Sa\u00fal"
+      ],
+      "cost": 5.0,
+      "dominating": true,
+      "optimal": false
+    },
+    {
+      "bits": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "bitstring": "111000",
+      "hired": [
+        "Ana",
+        "Enrique",
+        "Sa\u00fal"
+      ],
+      "cost": 3.0,
+      "dominating": true,
+      "optimal": false
+    },
+    {
+      "bits": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "bitstring": "111001",
+      "hired": [
+        "Mario",
+        "Ana",
+        "Enrique",
+        "Sa\u00fal"
+      ],
+      "cost": 4.0,
+      "dominating": true,
+      "optimal": false
+    },
+    {
+      "bits": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "bitstring": "111010",
+      "hired": [
+        "Sarah",
+        "Ana",
+        "Enrique",
+        "Sa\u00fal"
+      ],
+      "cost": 4.0,
+      "dominating": true,
+      "optimal": false
+    },
+    {
+      "bits": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "bitstring": "111011",
+      "hired": [
+        "Mario",
+        "Sarah",
+        "Ana",
+        "Enrique",
+        "Sa\u00fal"
+      ],
+      "cost": 5.0,
+      "dominating": true,
+      "optimal": false
+    },
+    {
+      "bits": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "bitstring": "111100",
+      "hired": [
+        "Ra\u00fal",
+        "Ana",
+        "Enrique",
+        "Sa\u00fal"
+      ],
+      "cost": 4.0,
+      "dominating": true,
+      "optimal": false
+    },
+    {
+      "bits": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "bitstring": "111101",
+      "hired": [
+        "Mario",
+        "Ra\u00fal",
+        "Ana",
+        "Enrique",
+        "Sa\u00fal"
+      ],
+      "cost": 5.0,
+      "dominating": true,
+      "optimal": false
+    },
+    {
+      "bits": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "bitstring": "111110",
+      "hired": [
+        "Sarah",
+        "Ra\u00fal",
+        "Ana",
+        "Enrique",
+        "Sa\u00fal"
+      ],
+      "cost": 5.0,
+      "dominating": true,
+      "optimal": false
+    },
+    {
+      "bits": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "bitstring": "111111",
+      "hired": [
+        "Mario",
+        "Sarah",
+        "Ra\u00fal",
+        "Ana",
+        "Enrique",
+        "Sa\u00fal"
+      ],
+      "cost": 6.0,
+      "dominating": true,
+      "optimal": false
+    }
+  ],
+  "optimal_cost": 2.0,
+  "optimal_hired": [
+    "Ana",
+    "Enrique"
+  ],
+  "channels": {
+    "Mario": "Ana",
+    "Sarah": "Enrique",
+    "Ra\u00fal": "Enrique",
+    "Ana": "Ana",
+    "Enrique": "Enrique",
+    "Sa\u00fal": "Ana"
+  },
+  "greedy_hired": [
+    "Mario",
+    "Sarah",
+    "Ana"
+  ],
+  "greedy_cost": 3.0,
+  "identity_shift": 4.625,
+  "diagonal_error": 0.0,
+  "pauli_terms": [
+    {
+      "label": "IIIIIZ",
+      "weight": 1,
+      "coefficient": 0.375
+    },
+    {
+      "label": "IIIIZI",
+      "weight": 1,
+      "coefficient": 0.125
+    },
+    {
+      "label": "IIIZII",
+      "weight": 1,
+      "coefficient": 0.125
+    },
+    {
+      "label": "IIZIII",
+      "weight": 1,
+      "coefficient": 0.375
+    },
+    {
+      "label": "IZIIII",
+      "weight": 1,
+      "coefficient": 0.25
+    },
+    {
+      "label": "ZIIIII",
+      "weight": 1,
+      "coefficient": 0.25
+    },
+    {
+      "label": "IIIIZZ",
+      "weight": 2,
+      "coefficient": 0.375
+    },
+    {
+      "label": "IIIZIZ",
+      "weight": 2,
+      "coefficient": 0.375
+    },
+    {
+      "label": "IIIZZI",
+      "weight": 2,
+      "coefficient": 0.375
+    },
+    {
+      "label": "IIZIIZ",
+      "weight": 2,
+      "coefficient": 0.375
+    },
+    {
+      "label": "IIZIZI",
+      "weight": 2,
+      "coefficient": 0.125
+    },
+    {
+      "label": "IIZZII",
+      "weight": 2,
+      "coefficient": 0.125
+    },
+    {
+      "label": "IZIIIZ",
+      "weight": 2,
+      "coefficient": 0.5
+    },
+    {
+      "label": "IZIIZI",
+      "weight": 2,
+      "coefficient": 0.5
+    },
+    {
+      "label": "IZIZII",
+      "weight": 2,
+      "coefficient": 0.5
+    },
+    {
+      "label": "ZIIIIZ",
+      "weight": 2,
+      "coefficient": 0.25
+    },
+    {
+      "label": "ZIZIII",
+      "weight": 2,
+      "coefficient": 0.75
+    },
+    {
+      "label": "IIIZZZ",
+      "weight": 3,
+      "coefficient": 0.125
+    },
+    {
+      "label": "IIZIZZ",
+      "weight": 3,
+      "coefficient": 0.125
+    },
+    {
+      "label": "IIZZIZ",
+      "weight": 3,
+      "coefficient": 0.125
+    },
+    {
+      "label": "IIZZZI",
+      "weight": 3,
+      "coefficient": 0.125
+    },
+    {
+      "label": "IZIIZZ",
+      "weight": 3,
+      "coefficient": 0.25
+    },
+    {
+      "label": "IZIZIZ",
+      "weight": 3,
+      "coefficient": 0.25
+    },
+    {
+      "label": "IZIZZI",
+      "weight": 3,
+      "coefficient": 0.25
+    },
+    {
+      "label": "ZIZIIZ",
+      "weight": 3,
+      "coefficient": 0.25
+    },
+    {
+      "label": "IIZZZZ",
+      "weight": 4,
+      "coefficient": 0.125
+    }
+  ],
+  "squared_ground": [
+    {
+      "hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "bitstring": "011000",
+      "cost": 2.0,
+      "dominating": true
+    }
+  ],
+  "squared_spectrum": {
+    "ground_cost": 2.0,
+    "next_cost": 4.0,
+    "next_dominating_cost": 7.0
+  },
+  "penalty_sweep": [
+    {
+      "penalty": 0.0,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 0.0,
+      "best_infeasible_hired": [],
+      "ground_hired": [
+        []
+      ],
+      "ground_is_minimum_dominating_set": false
+    },
+    {
+      "penalty": 0.05,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 0.3,
+      "best_infeasible_hired": [],
+      "ground_hired": [
+        []
+      ],
+      "ground_is_minimum_dominating_set": false
+    },
+    {
+      "penalty": 0.1,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 0.6,
+      "best_infeasible_hired": [],
+      "ground_hired": [
+        []
+      ],
+      "ground_is_minimum_dominating_set": false
+    },
+    {
+      "penalty": 0.15,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 0.9,
+      "best_infeasible_hired": [],
+      "ground_hired": [
+        []
+      ],
+      "ground_is_minimum_dominating_set": false
+    },
+    {
+      "penalty": 0.2,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 1.2,
+      "best_infeasible_hired": [],
+      "ground_hired": [
+        []
+      ],
+      "ground_is_minimum_dominating_set": false
+    },
+    {
+      "penalty": 0.25,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 1.5,
+      "best_infeasible_hired": [],
+      "ground_hired": [
+        [],
+        [
+          "Mario"
+        ]
+      ],
+      "ground_is_minimum_dominating_set": false
+    },
+    {
+      "penalty": 0.3,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 1.6,
+      "best_infeasible_hired": [
+        "Mario"
+      ],
+      "ground_hired": [
+        [
+          "Mario"
+        ]
+      ],
+      "ground_is_minimum_dominating_set": false
+    },
+    {
+      "penalty": 0.35,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 1.7,
+      "best_infeasible_hired": [
+        "Mario"
+      ],
+      "ground_hired": [
+        [
+          "Mario"
+        ]
+      ],
+      "ground_is_minimum_dominating_set": false
+    },
+    {
+      "penalty": 0.4,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 1.8,
+      "best_infeasible_hired": [
+        "Mario"
+      ],
+      "ground_hired": [
+        [
+          "Mario"
+        ]
+      ],
+      "ground_is_minimum_dominating_set": false
+    },
+    {
+      "penalty": 0.45,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 1.9,
+      "best_infeasible_hired": [
+        "Mario"
+      ],
+      "ground_hired": [
+        [
+          "Mario"
+        ]
+      ],
+      "ground_is_minimum_dominating_set": false
+    },
+    {
+      "penalty": 0.5,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 2.0,
+      "best_infeasible_hired": [
+        "Mario"
+      ],
+      "ground_hired": [
+        [
+          "Mario"
+        ],
+        [
+          "Ana",
+          "Enrique"
+        ]
+      ],
+      "ground_is_minimum_dominating_set": false
+    },
+    {
+      "penalty": 0.55,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 2.1,
+      "best_infeasible_hired": [
+        "Mario"
+      ],
+      "ground_hired": [
+        [
+          "Ana",
+          "Enrique"
+        ]
+      ],
+      "ground_is_minimum_dominating_set": true
+    },
+    {
+      "penalty": 0.6,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 2.2,
+      "best_infeasible_hired": [
+        "Mario"
+      ],
+      "ground_hired": [
+        [
+          "Ana",
+          "Enrique"
+        ]
+      ],
+      "ground_is_minimum_dominating_set": true
+    },
+    {
+      "penalty": 0.65,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 2.3,
+      "best_infeasible_hired": [
+        "Mario"
+      ],
+      "ground_hired": [
+        [
+          "Ana",
+          "Enrique"
+        ]
+      ],
+      "ground_is_minimum_dominating_set": true
+    },
+    {
+      "penalty": 0.7,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 2.4,
+      "best_infeasible_hired": [
+        "Mario"
+      ],
+      "ground_hired": [
+        [
+          "Ana",
+          "Enrique"
+        ]
+      ],
+      "ground_is_minimum_dominating_set": true
+    },
+    {
+      "penalty": 0.75,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 2.5,
+      "best_infeasible_hired": [
+        "Mario"
+      ],
+      "ground_hired": [
+        [
+          "Ana",
+          "Enrique"
+        ]
+      ],
+      "ground_is_minimum_dominating_set": true
+    },
+    {
+      "penalty": 0.8,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 2.6,
+      "best_infeasible_hired": [
+        "Mario"
+      ],
+      "ground_hired": [
+        [
+          "Ana",
+          "Enrique"
+        ]
+      ],
+      "ground_is_minimum_dominating_set": true
+    },
+    {
+      "penalty": 0.85,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 2.7,
+      "best_infeasible_hired": [
+        "Mario"
+      ],
+      "ground_hired": [
+        [
+          "Ana",
+          "Enrique"
+        ]
+      ],
+      "ground_is_minimum_dominating_set": true
+    },
+    {
+      "penalty": 0.9,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 2.8,
+      "best_infeasible_hired": [
+        "Mario"
+      ],
+      "ground_hired": [
+        [
+          "Ana",
+          "Enrique"
+        ]
+      ],
+      "ground_is_minimum_dominating_set": true
+    },
+    {
+      "penalty": 0.95,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 2.9,
+      "best_infeasible_hired": [
+        "Mario"
+      ],
+      "ground_hired": [
+        [
+          "Ana",
+          "Enrique"
+        ]
+      ],
+      "ground_is_minimum_dominating_set": true
+    },
+    {
+      "penalty": 1.0,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 3.0,
+      "best_infeasible_hired": [
+        "Mario"
+      ],
+      "ground_hired": [
+        [
+          "Ana",
+          "Enrique"
+        ]
+      ],
+      "ground_is_minimum_dominating_set": true
+    },
+    {
+      "penalty": 1.05,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 3.05,
+      "best_infeasible_hired": [
+        "Mario",
+        "Sarah"
+      ],
+      "ground_hired": [
+        [
+          "Ana",
+          "Enrique"
+        ]
+      ],
+      "ground_is_minimum_dominating_set": true
+    },
+    {
+      "penalty": 1.1,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 3.1,
+      "best_infeasible_hired": [
+        "Mario",
+        "Sarah"
+      ],
+      "ground_hired": [
+        [
+          "Ana",
+          "Enrique"
+        ]
+      ],
+      "ground_is_minimum_dominating_set": true
+    },
+    {
+      "penalty": 1.15,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 3.15,
+      "best_infeasible_hired": [
+        "Mario",
+        "Sarah"
+      ],
+      "ground_hired": [
+        [
+          "Ana",
+          "Enrique"
+        ]
+      ],
+      "ground_is_minimum_dominating_set": true
+    },
+    {
+      "penalty": 1.2,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 3.2,
+      "best_infeasible_hired": [
+        "Mario",
+        "Sarah"
+      ],
+      "ground_hired": [
+        [
+          "Ana",
+          "Enrique"
+        ]
+      ],
+      "ground_is_minimum_dominating_set": true
+    },
+    {
+      "penalty": 1.25,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 3.25,
+      "best_infeasible_hired": [
+        "Mario",
+        "Sarah"
+      ],
+      "ground_hired": [
+        [
+          "Ana",
+          "Enrique"
+        ]
+      ],
+      "ground_is_minimum_dominating_set": true
+    },
+    {
+      "penalty": 1.3,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 3.3,
+      "best_infeasible_hired": [
+        "Mario",
+        "Sarah"
+      ],
+      "ground_hired": [
+        [
+          "Ana",
+          "Enrique"
+        ]
+      ],
+      "ground_is_minimum_dominating_set": true
+    },
+    {
+      "penalty": 1.35,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 3.35,
+      "best_infeasible_hired": [
+        "Mario",
+        "Sarah"
+      ],
+      "ground_hired": [
+        [
+          "Ana",
+          "Enrique"
+        ]
+      ],
+      "ground_is_minimum_dominating_set": true
+    },
+    {
+      "penalty": 1.4,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 3.4,
+      "best_infeasible_hired": [
+        "Mario",
+        "Sarah"
+      ],
+      "ground_hired": [
+        [
+          "Ana",
+          "Enrique"
+        ]
+      ],
+      "ground_is_minimum_dominating_set": true
+    },
+    {
+      "penalty": 1.45,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 3.45,
+      "best_infeasible_hired": [
+        "Mario",
+        "Sarah"
+      ],
+      "ground_hired": [
+        [
+          "Ana",
+          "Enrique"
+        ]
+      ],
+      "ground_is_minimum_dominating_set": true
+    },
+    {
+      "penalty": 1.5,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 3.5,
+      "best_infeasible_hired": [
+        "Mario",
+        "Sarah"
+      ],
+      "ground_hired": [
+        [
+          "Ana",
+          "Enrique"
+        ]
+      ],
+      "ground_is_minimum_dominating_set": true
+    },
+    {
+      "penalty": 1.55,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 3.55,
+      "best_infeasible_hired": [
+        "Mario",
+        "Sarah"
+      ],
+      "ground_hired": [
+        [
+          "Ana",
+          "Enrique"
+        ]
+      ],
+      "ground_is_minimum_dominating_set": true
+    },
+    {
+      "penalty": 1.6,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 3.6,
+      "best_infeasible_hired": [
+        "Mario",
+        "Sarah"
+      ],
+      "ground_hired": [
+        [
+          "Ana",
+          "Enrique"
+        ]
+      ],
+      "ground_is_minimum_dominating_set": true
+    },
+    {
+      "penalty": 1.65,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 3.65,
+      "best_infeasible_hired": [
+        "Mario",
+        "Sarah"
+      ],
+      "ground_hired": [
+        [
+          "Ana",
+          "Enrique"
+        ]
+      ],
+      "ground_is_minimum_dominating_set": true
+    },
+    {
+      "penalty": 1.7,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 3.7,
+      "best_infeasible_hired": [
+        "Mario",
+        "Sarah"
+      ],
+      "ground_hired": [
+        [
+          "Ana",
+          "Enrique"
+        ]
+      ],
+      "ground_is_minimum_dominating_set": true
+    },
+    {
+      "penalty": 1.75,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 3.75,
+      "best_infeasible_hired": [
+        "Mario",
+        "Sarah"
+      ],
+      "ground_hired": [
+        [
+          "Ana",
+          "Enrique"
+        ]
+      ],
+      "ground_is_minimum_dominating_set": true
+    },
+    {
+      "penalty": 1.8,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 3.8,
+      "best_infeasible_hired": [
+        "Mario",
+        "Sarah"
+      ],
+      "ground_hired": [
+        [
+          "Ana",
+          "Enrique"
+        ]
+      ],
+      "ground_is_minimum_dominating_set": true
+    },
+    {
+      "penalty": 1.85,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 3.85,
+      "best_infeasible_hired": [
+        "Mario",
+        "Sarah"
+      ],
+      "ground_hired": [
+        [
+          "Ana",
+          "Enrique"
+        ]
+      ],
+      "ground_is_minimum_dominating_set": true
+    },
+    {
+      "penalty": 1.9,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 3.9,
+      "best_infeasible_hired": [
+        "Mario",
+        "Sarah"
+      ],
+      "ground_hired": [
+        [
+          "Ana",
+          "Enrique"
+        ]
+      ],
+      "ground_is_minimum_dominating_set": true
+    },
+    {
+      "penalty": 1.95,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 3.95,
+      "best_infeasible_hired": [
+        "Mario",
+        "Sarah"
+      ],
+      "ground_hired": [
+        [
+          "Ana",
+          "Enrique"
+        ]
+      ],
+      "ground_is_minimum_dominating_set": true
+    },
+    {
+      "penalty": 2.0,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 4.0,
+      "best_infeasible_hired": [
+        "Mario",
+        "Sarah"
+      ],
+      "ground_hired": [
+        [
+          "Ana",
+          "Enrique"
+        ]
+      ],
+      "ground_is_minimum_dominating_set": true
+    },
+    {
+      "penalty": 2.05,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 4.05,
+      "best_infeasible_hired": [
+        "Mario",
+        "Sarah"
+      ],
+      "ground_hired": [
+        [
+          "Ana",
+          "Enrique"
+        ]
+      ],
+      "ground_is_minimum_dominating_set": true
+    },
+    {
+      "penalty": 2.1,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 4.1,
+      "best_infeasible_hired": [
+        "Mario",
+        "Sarah"
+      ],
+      "ground_hired": [
+        [
+          "Ana",
+          "Enrique"
+        ]
+      ],
+      "ground_is_minimum_dominating_set": true
+    },
+    {
+      "penalty": 2.15,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 4.15,
+      "best_infeasible_hired": [
+        "Mario",
+        "Sarah"
+      ],
+      "ground_hired": [
+        [
+          "Ana",
+          "Enrique"
+        ]
+      ],
+      "ground_is_minimum_dominating_set": true
+    },
+    {
+      "penalty": 2.2,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 4.2,
+      "best_infeasible_hired": [
+        "Mario",
+        "Sarah"
+      ],
+      "ground_hired": [
+        [
+          "Ana",
+          "Enrique"
+        ]
+      ],
+      "ground_is_minimum_dominating_set": true
+    },
+    {
+      "penalty": 2.25,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 4.25,
+      "best_infeasible_hired": [
+        "Mario",
+        "Sarah"
+      ],
+      "ground_hired": [
+        [
+          "Ana",
+          "Enrique"
+        ]
+      ],
+      "ground_is_minimum_dominating_set": true
+    },
+    {
+      "penalty": 2.3,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 4.3,
+      "best_infeasible_hired": [
+        "Mario",
+        "Sarah"
+      ],
+      "ground_hired": [
+        [
+          "Ana",
+          "Enrique"
+        ]
+      ],
+      "ground_is_minimum_dominating_set": true
+    },
+    {
+      "penalty": 2.35,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 4.35,
+      "best_infeasible_hired": [
+        "Mario",
+        "Sarah"
+      ],
+      "ground_hired": [
+        [
+          "Ana",
+          "Enrique"
+        ]
+      ],
+      "ground_is_minimum_dominating_set": true
+    },
+    {
+      "penalty": 2.4,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 4.4,
+      "best_infeasible_hired": [
+        "Mario",
+        "Sarah"
+      ],
+      "ground_hired": [
+        [
+          "Ana",
+          "Enrique"
+        ]
+      ],
+      "ground_is_minimum_dominating_set": true
+    },
+    {
+      "penalty": 2.45,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 4.45,
+      "best_infeasible_hired": [
+        "Mario",
+        "Sarah"
+      ],
+      "ground_hired": [
+        [
+          "Ana",
+          "Enrique"
+        ]
+      ],
+      "ground_is_minimum_dominating_set": true
+    },
+    {
+      "penalty": 2.5,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 4.5,
+      "best_infeasible_hired": [
+        "Mario",
+        "Sarah"
+      ],
+      "ground_hired": [
+        [
+          "Ana",
+          "Enrique"
+        ]
+      ],
+      "ground_is_minimum_dominating_set": true
+    },
+    {
+      "penalty": 2.55,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 4.55,
+      "best_infeasible_hired": [
+        "Mario",
+        "Sarah"
+      ],
+      "ground_hired": [
+        [
+          "Ana",
+          "Enrique"
+        ]
+      ],
+      "ground_is_minimum_dominating_set": true
+    },
+    {
+      "penalty": 2.6,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 4.6,
+      "best_infeasible_hired": [
+        "Mario",
+        "Sarah"
+      ],
+      "ground_hired": [
+        [
+          "Ana",
+          "Enrique"
+        ]
+      ],
+      "ground_is_minimum_dominating_set": true
+    },
+    {
+      "penalty": 2.65,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 4.65,
+      "best_infeasible_hired": [
+        "Mario",
+        "Sarah"
+      ],
+      "ground_hired": [
+        [
+          "Ana",
+          "Enrique"
+        ]
+      ],
+      "ground_is_minimum_dominating_set": true
+    },
+    {
+      "penalty": 2.7,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 4.7,
+      "best_infeasible_hired": [
+        "Mario",
+        "Sarah"
+      ],
+      "ground_hired": [
+        [
+          "Ana",
+          "Enrique"
+        ]
+      ],
+      "ground_is_minimum_dominating_set": true
+    },
+    {
+      "penalty": 2.75,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 4.75,
+      "best_infeasible_hired": [
+        "Mario",
+        "Sarah"
+      ],
+      "ground_hired": [
+        [
+          "Ana",
+          "Enrique"
+        ]
+      ],
+      "ground_is_minimum_dominating_set": true
+    },
+    {
+      "penalty": 2.8,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 4.8,
+      "best_infeasible_hired": [
+        "Mario",
+        "Sarah"
+      ],
+      "ground_hired": [
+        [
+          "Ana",
+          "Enrique"
+        ]
+      ],
+      "ground_is_minimum_dominating_set": true
+    },
+    {
+      "penalty": 2.85,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 4.85,
+      "best_infeasible_hired": [
+        "Mario",
+        "Sarah"
+      ],
+      "ground_hired": [
+        [
+          "Ana",
+          "Enrique"
+        ]
+      ],
+      "ground_is_minimum_dominating_set": true
+    },
+    {
+      "penalty": 2.9,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 4.9,
+      "best_infeasible_hired": [
+        "Mario",
+        "Sarah"
+      ],
+      "ground_hired": [
+        [
+          "Ana",
+          "Enrique"
+        ]
+      ],
+      "ground_is_minimum_dominating_set": true
+    },
+    {
+      "penalty": 2.95,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 4.95,
+      "best_infeasible_hired": [
+        "Mario",
+        "Sarah"
+      ],
+      "ground_hired": [
+        [
+          "Ana",
+          "Enrique"
+        ]
+      ],
+      "ground_is_minimum_dominating_set": true
+    },
+    {
+      "penalty": 3.0,
+      "best_dominating_cost": 2.0,
+      "best_dominating_hired": [
+        "Ana",
+        "Enrique"
+      ],
+      "best_infeasible_cost": 5.0,
+      "best_infeasible_hired": [
+        "Mario",
+        "Sarah"
+      ],
+      "ground_hired": [
+        [
+          "Ana",
+          "Enrique"
+        ]
+      ],
+      "ground_is_minimum_dominating_set": true
+    }
+  ],
+  "cycle": {
+    "names": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "edges": [
+      [
+        "0",
+        "1"
+      ],
+      [
+        "1",
+        "2"
+      ],
+      [
+        "2",
+        "3"
+      ],
+      [
+        "3",
+        "0"
+      ]
+    ],
+    "squared_ground": [
+      {
+        "hired": [
+          "0"
+        ],
+        "bitstring": "0001",
+        "cost": 3.0,
+        "dominating": false
+      },
+      {
+        "hired": [
+          "1"
+        ],
+        "bitstring": "0010",
+        "cost": 3.0,
+        "dominating": false
+      },
+      {
+        "hired": [
+          "2"
+        ],
+        "bitstring": "0100",
+        "cost": 3.0,
+        "dominating": false
+      },
+      {
+        "hired": [
+          "3"
+        ],
+        "bitstring": "1000",
+        "cost": 3.0,
+        "dominating": false
+      }
+    ],
+    "product_ground": [
+      {
+        "hired": [
+          "0",
+          "1"
+        ],
+        "bitstring": "0011",
+        "cost": 2.0,
+        "dominating": true
+      },
+      {
+        "hired": [
+          "0",
+          "2"
+        ],
+        "bitstring": "0101",
+        "cost": 2.0,
+        "dominating": true
+      },
+      {
+        "hired": [
+          "1",
+          "2"
+        ],
+        "bitstring": "0110",
+        "cost": 2.0,
+        "dominating": true
+      },
+      {
+        "hired": [
+          "0",
+          "3"
+        ],
+        "bitstring": "1001",
+        "cost": 2.0,
+        "dominating": true
+      },
+      {
+        "hired": [
+          "1",
+          "3"
+        ],
+        "bitstring": "1010",
+        "cost": 2.0,
+        "dominating": true
+      },
+      {
+        "hired": [
+          "2",
+          "3"
+        ],
+        "bitstring": "1100",
+        "cost": 2.0,
+        "dominating": true
+      }
+    ]
+  },
+  "depths": [
+    {
+      "depth": 1,
+      "parameter_names": [
+        "\u03b2[0]",
+        "\u03b3[0]"
+      ],
+      "best_parameters": [
+        1.8704332697,
+        4.7125245223
+      ],
+      "best_energy": 3.6245359213535706,
+      "final_energies": [
+        3.7128165937571107,
+        3.78230345238435,
+        3.6245362949333346,
+        3.6245364169785184,
+        3.624535938508319,
+        3.7128166698102834,
+        3.782303473642646,
+        3.7128165938818514,
+        3.7823034459720697,
+        3.7128166182128535,
+        3.624536167805283,
+        3.7128166483940404,
+        3.6245383676121787,
+        3.782303465075006,
+        3.624536185271489,
+        3.6245360235386666,
+        3.7128166107409237,
+        3.712816580155857,
+        3.6245361069612123,
+        3.6245360793763255,
+        3.6245380380273646,
+        3.6245361405346865,
+        3.7128165702318436,
+        3.6245369008170076,
+        3.7823034706275775,
+        3.782303444203917,
+        3.7823034402022593,
+        3.782303536912279,
+        3.6245368899414654,
+        3.7823034530929127,
+        3.7823034482551843,
+        3.7128165742101054,
+        3.7823034710865286,
+        3.6245361746455034,
+        3.624535921353578,
+        3.6245360150263193,
+        3.7128165718806097,
+        3.712816594192636,
+        3.712816587349203,
+        3.7128166010414025
+      ],
+      "best_trace": [
+        3.8365535372610204,
+        5.525066221151336,
+        3.9507559115937263,
+        5.011122301988216,
+        4.710718988540924,
+        3.6454321896749287,
+        3.7703361927463908,
+        3.6422207204677353,
+        3.6880750587148503,
+        3.644871327298575,
+        3.647545134973056,
+        3.639774027929094,
+        3.637257386432978,
+        3.639164526772518,
+        3.6368928273147123,
+        3.6361005151153334,
+        3.6345779897024073,
+        3.6318140359016478,
+        3.6298192256735042,
+        3.6299511862354183,
+        3.634071403480885,
+        3.629246433877504,
+        3.6294868766094903,
+        3.629797244422761,
+        3.6284320164346076,
+        3.6278000584183494,
+        3.627046568243209,
+        3.626569449180163,
+        3.632841907325795,
+        3.625511643526978,
+        3.626089108022954,
+        3.6258116793449253,
+        3.6255235835452533,
+        3.625484396564816,
+        3.6254376704231195,
+        3.625372406227422,
+        3.6254270715075196,
+        3.625335486479161,
+        3.6252832943814335,
+        3.6252754925931145,
+        3.6252224619879216,
+        3.62517245108321,
+        3.6250805285347254,
+        3.62497404649016,
+        3.6248604435404004,
+        3.624834201836962,
+        3.6254660803392174,
+        3.624709315928823,
+        3.6246983142273095,
+        3.6246682557592305,
+        3.6246213631293482,
+        3.6245640255655482,
+        3.6247590213509153,
+        3.6246209820380946,
+        3.6245753134445913,
+        3.624567280301288,
+        3.6245656485512523,
+        3.6245668746110513,
+        3.624564412592612,
+        3.6245625834142072,
+        3.6245601079445366,
+        3.6245616203622326,
+        3.6245583465935347,
+        3.624559139028595,
+        3.6245576661880223,
+        3.6245566575915724,
+        3.6245564781864688,
+        3.624558288031158,
+        3.624556589756814,
+        3.6245555646315895,
+        3.6245541185017647,
+        3.6245545874991327,
+        3.6245529683685636,
+        3.6245520538781664,
+        3.624551456608759,
+        3.624557192882709,
+        3.624551220905162,
+        3.624549309359759,
+        3.624548021680627,
+        3.6245469476059626,
+        3.6245460862333916,
+        3.6245451317876975,
+        3.6245435621265103,
+        3.624543354796382,
+        3.624540270329905,
+        3.624539878382045,
+        3.6245385166277773,
+        3.6245368996106997,
+        3.624537383604019,
+        3.624538729257601,
+        3.62453713335163,
+        3.6245370153437015,
+        3.6245367325531035,
+        3.624536607401857,
+        3.624536762189549,
+        3.624536532398698,
+        3.62453643240141,
+        3.6245363779239446,
+        3.6245371132851094,
+        3.62453619685168,
+        3.624536178301774,
+        3.6245360826994553,
+        3.624536017424222,
+        3.624536008420934,
+        3.624535921353578,
+        3.6245360280304015,
+        3.624536079689863,
+        3.6245359443506797
+      ],
+      "probabilities": [
+        7.985090815537913e-05,
+        7.528758682645815e-05,
+        8.859473935878075e-06,
+        0.0010457386113630921,
+        8.859473935878331e-06,
+        0.0010457386113630904,
+        4.267481045321859e-06,
+        0.028052020655146895,
+        0.0037449476413131317,
+        2.562115717108995e-06,
+        0.0004020830039648917,
+        0.024961295260842377,
+        0.0004020830039648946,
+        0.024961295260842377,
+        0.06552524719982299,
+        0.009290452560684085,
+        0.00011587674028594183,
+        0.005900741039656906,
+        0.0021663580782438022,
+        0.0005529869409915459,
+        0.0021663580782438022,
+        0.0005529869409915448,
+        0.0008535763989895484,
+        0.00505747601955472,
+        0.00024985683470690626,
+        0.029492062146960728,
+        0.07274892591703663,
+        0.002694502046215011,
+        0.07274892591703666,
+        0.002694502046215011,
+        0.0011193827223034793,
+        0.0002641405844483713,
+        0.0028254798057887427,
+        0.0007632814434820657,
+        0.002123271797423923,
+        0.005438321470986253,
+        0.0021232717974239254,
+        0.005438321470986251,
+        0.029492062440234872,
+        0.1362226706935012,
+        1.850719205414157e-06,
+        0.0011021124186605348,
+        0.00863474146614175,
+        0.06698267543963891,
+        0.008634741466141752,
+        0.06698267543963894,
+        0.003406456943436416,
+        0.00021746856660151485,
+        0.00040208316411302565,
+        0.024961296631075523,
+        0.06552524874019754,
+        0.009290451286029575,
+        0.06552524874019751,
+        0.009290451286029571,
+        0.006073952019713022,
+        0.0163122252338947,
+        0.010193738244135697,
+        0.08113216832819402,
+        0.001045738692118132,
+        0.004830224475806299,
+        0.0010457386921181307,
+        0.004830224475806307,
+        9.554263962100644e-05,
+        6.701667085148116e-05
+      ],
+      "gate_counts": {
+        "h": 6,
+        "rx": 6,
+        "rz": 26,
+        "cx": 46
+      },
+      "compiled_depth": 43,
+      "optimal_probability": 0.00024985683470690626,
+      "dominating_probability": 0.9211505071179275
+    },
+    {
+      "depth": 2,
+      "parameter_names": [
+        "\u03b2[0]",
+        "\u03b2[1]",
+        "\u03b3[0]",
+        "\u03b3[1]"
+      ],
+      "best_parameters": [
+        3.4685970221,
+        3.3401754251,
+        3.4902888164,
+        1.8468067432
+      ],
+      "best_energy": 3.1761343190291775,
+      "final_energies": [
+        3.3526543619346842,
+        4.349512870222014,
+        3.4564023755356565,
+        3.176134319029177,
+        3.352609455566708,
+        4.278909295672635,
+        3.7823042436320202,
+        3.3526108689591725,
+        3.624541423833408,
+        3.6501568094021053,
+        3.4938745686052988,
+        3.624541155697597,
+        3.6246013283822975,
+        3.3526096953567994,
+        3.352648531247372,
+        3.5868117497322833,
+        3.650156029545733,
+        3.3532464339596215,
+        3.624525829696336,
+        3.650216361468555,
+        4.336384976483935,
+        3.7822980074366197,
+        3.495660009268092,
+        4.278909355295559,
+        3.4938706926021776,
+        3.6245396758518984,
+        3.3526101767796694,
+        3.456403005430025,
+        3.4564024241427447,
+        3.452855383232863,
+        3.6501553303900223,
+        3.352854944918662,
+        3.423014978924888,
+        4.205558646762883,
+        4.2789094839606046,
+        3.283606295928327,
+        3.4564029678683035,
+        3.488276150001382,
+        3.6245366293175616,
+        3.782304428253282
+      ],
+      "best_trace": [
+        6.01891579036782,
+        5.678462543309938,
+        3.306280718517959,
+        3.775627774321795,
+        3.3938962773442585,
+        5.475371999624295,
+        3.9856961498765533,
+        3.3594262234533385,
+        3.7046385141717866,
+        3.309407558378961,
+        3.243293169538116,
+        3.1988617936404986,
+        3.2369180789166,
+        3.187360380045684,
+        3.1803898152011305,
+        3.216495105667402,
+        3.1828000349292243,
+        3.1834203503813354,
+        3.1786197051474145,
+        3.1775866782379145,
+        3.1795025530224166,
+        3.1779366805242413,
+        3.177646609778091,
+        3.1776675820920257,
+        3.177106382543413,
+        3.1769191931137106,
+        3.1768737973487755,
+        3.1777240533459095,
+        3.1772015446500133,
+        3.1764642149311415,
+        3.1766063811230136,
+        3.176598244399485,
+        3.176477885898297,
+        3.1764296933456775,
+        3.1764535800534572,
+        3.1764387452180354,
+        3.176403301807047,
+        3.1763889504572864,
+        3.1763725744084432,
+        3.1763783487878103,
+        3.176380795449717,
+        3.1763525755042057,
+        3.176335068313164,
+        3.176313421169657,
+        3.176287155368822,
+        3.1763389429431927,
+        3.1762897638374836,
+        3.1762717192476915,
+        3.17626054048322,
+        3.1762603640140536,
+        3.1762515391124797,
+        3.1762672160387835,
+        3.176246816275343,
+        3.176234765888791,
+        3.17622616001223,
+        3.176235938351348,
+        3.1762229060048712,
+        3.1762224972948725,
+        3.176210997748793,
+        3.17620291848227,
+        3.1762153366582937,
+        3.1762016961835116,
+        3.176195718521769,
+        3.176193049575766,
+        3.176184879116892,
+        3.176179271793951,
+        3.1762241372343185,
+        3.1761852647609765,
+        3.1761685657630165,
+        3.176174533480598,
+        3.176167701942174,
+        3.1761598848344423,
+        3.1761582112334525,
+        3.1761614904858844,
+        3.176156005478325,
+        3.1761538824455116,
+        3.1761709198239214,
+        3.1761490481525905,
+        3.176146536124901,
+        3.1761445387456906,
+        3.1761444773670675,
+        3.1761437563983925,
+        3.176143664518211,
+        3.1761428415775566,
+        3.1761416860389033,
+        3.17614105367137,
+        3.176140352205168,
+        3.1761395896291873,
+        3.176139975970793,
+        3.176139778623874,
+        3.176139239502949,
+        3.1761391477780636,
+        3.1761390526546043,
+        3.1761393302382097,
+        3.1761393333177788,
+        3.176138588175018,
+        3.1761380736212956,
+        3.176138238217225,
+        3.176137772319758,
+        3.1761375792648243,
+        3.176137573716389,
+        3.1761375328581445,
+        3.17613805951693,
+        3.176137452932524,
+        3.176137040925414,
+        3.1761365339088243,
+        3.1761362232060644,
+        3.1761357804578063,
+        3.1761353149022513,
+        3.1761350808476605,
+        3.1761349585653242,
+        3.1761349806121797,
+        3.1761350253115994,
+        3.176134770256417,
+        3.1761348049194766,
+        3.1761350084252085,
+        3.1761344705155308,
+        3.176134319029177,
+        3.1761343371737425,
+        3.176134388388058,
+        3.1761343702267624
+      ],
+      "probabilities": [
+        0.002118330997344216,
+        0.0009852884371991716,
+        0.0014522899727651799,
+        0.0065779450763193735,
+        0.0014522899727651877,
+        0.006577945076319367,
+        0.014042066118363544,
+        0.003056364581272936,
+        0.0002654055704437051,
+        0.003025889062731047,
+        0.004574552228064914,
+        0.07695908734686298,
+        0.004574552228064919,
+        0.07695908734686305,
+        0.0627414810495741,
+        0.0009737131429897327,
+        0.00041815767224328063,
+        0.008673627893790918,
+        0.008916900496680789,
+        0.0028258523309866944,
+        0.008916900496680778,
+        0.00282585233098669,
+        0.0005018515075946272,
+        0.0003474003196993038,
+        0.1105515655231346,
+        0.041812262016234565,
+        0.03238935009164085,
+        0.0019320903948622833,
+        0.03238935009164087,
+        0.0019320903948622833,
+        0.0009519241386606604,
+        0.0023829080694693218,
+        0.006654688991172012,
+        0.0016384378904608123,
+        0.0028806633799088313,
+        0.0764381603128121,
+        0.0028806633799088347,
+        0.07643816031281216,
+        0.06224793399877448,
+        0.0010099410161111312,
+        0.00019205677145814722,
+        0.0005843584258023782,
+        0.0004664772770037995,
+        0.00541682258966135,
+        0.00046647727700380024,
+        0.005416822589661354,
+        0.007027495627819318,
+        7.737309022671418e-05,
+        0.0051962383397707815,
+        0.06860376963747429,
+        0.056686165475938986,
+        0.001310509859065163,
+        0.05668616547593896,
+        0.0013105098590651554,
+        0.0004963604923190273,
+        0.0023471702906485707,
+        0.026928990717464945,
+        0.0013412485648815245,
+        0.0022589191375912386,
+        0.00015919215577142083,
+        0.0022589191375912434,
+        0.0001591921557714225,
+        0.00015541902939247815,
+        0.00016032476360581613
+      ],
+      "gate_counts": {
+        "h": 6,
+        "rx": 12,
+        "rz": 52,
+        "cx": 92
+      },
+      "compiled_depth": 85,
+      "optimal_probability": 0.1105515655231346,
+      "dominating_probability": 0.8969104758971941
+    },
+    {
+      "depth": 3,
+      "parameter_names": [
+        "\u03b2[0]",
+        "\u03b2[1]",
+        "\u03b2[2]",
+        "\u03b3[0]",
+        "\u03b3[1]",
+        "\u03b3[2]"
+      ],
+      "best_parameters": [
+        3.0151902192,
+        0.2778024713,
+        2.8992393872,
+        1.3757336266,
+        2.1204295192,
+        5.1781462001
+      ],
+      "best_energy": 2.9312846292556434,
+      "final_energies": [
+        3.100343172733674,
+        3.2594613825099397,
+        3.324306538672456,
+        3.447422958096821,
+        3.582856135626593,
+        3.6167802870342323,
+        4.3298929397741714,
+        3.255243446885336,
+        3.530471996215003,
+        3.3591463555977867,
+        4.146260270526509,
+        3.4904789429716994,
+        3.628568751604306,
+        3.593930139336547,
+        3.4932581701707335,
+        3.2327448189188868,
+        3.248983782754874,
+        3.273903373401634,
+        3.6227356429085424,
+        3.288000701375923,
+        3.014894625372755,
+        3.4018964678694563,
+        3.6246655781749344,
+        3.352463498013247,
+        2.9312846292556474,
+        3.2649078255915733,
+        3.2587687117077846,
+        3.603478500609675,
+        3.282939082973895,
+        3.487993154060934,
+        4.1058853907277415,
+        3.889235384389905,
+        3.0537837598604844,
+        3.105821664395123,
+        3.9772888262089343,
+        3.280436500810131,
+        3.1945880262684767,
+        4.259554317050642,
+        3.267363536146977,
+        3.4524801839757773
+      ],
+      "best_trace": [
+        5.424463134592227,
+        3.84749920283062,
+        5.71690691030218,
+        5.01428913390466,
+        4.771965149718127,
+        4.3522923790767045,
+        4.592359075396692,
+        4.297605084951942,
+        3.9002453270671014,
+        3.7835134021812027,
+        3.99762525876155,
+        3.724107654541096,
+        3.6175114646159927,
+        3.5828231492724427,
+        3.6282145740630383,
+        3.5975238912539824,
+        3.5703651626950434,
+        3.504313707769527,
+        3.518286727330552,
+        3.4524468666541095,
+        3.472246085691763,
+        3.48380305387243,
+        3.424209718722408,
+        3.3670452340097468,
+        3.301858875655591,
+        3.271880035594286,
+        3.109777364861505,
+        3.1954818652690093,
+        3.089851840680546,
+        3.0626091357703977,
+        3.0618887789036426,
+        3.1352908543361098,
+        3.0620426089917085,
+        3.0538455810599077,
+        3.1285222064809832,
+        3.0814513555852407,
+        3.0472887723826236,
+        3.0362188165410657,
+        3.158229030552579,
+        3.0476143496700665,
+        2.9997953316386314,
+        3.021896273430986,
+        3.011446380703279,
+        3.0473071136604677,
+        2.988571334894398,
+        3.011713970126804,
+        2.9846085935381494,
+        2.9762260299778154,
+        2.9743975953642177,
+        2.9688282079130626,
+        2.9661687119948965,
+        2.9668996369934475,
+        2.966301116328303,
+        2.9644077754652187,
+        2.963127997942548,
+        2.962008623243139,
+        2.9611412432113555,
+        2.9597087273024396,
+        2.960368942373568,
+        2.96006866072235,
+        2.9582015758713665,
+        2.9570130545912043,
+        2.955599375288191,
+        2.9550567932211314,
+        2.9537270911555296,
+        2.954248155387355,
+        2.954060300238684,
+        2.95224468409868,
+        2.9521227913348103,
+        2.951257144604403,
+        2.9515372185804303,
+        2.951301151854637,
+        2.9514578738557087,
+        2.9521448767018814,
+        2.949838231031047,
+        2.9486122666129844,
+        2.947982782808457,
+        2.9482654979433596,
+        2.948341246865601,
+        2.9473973953193213,
+        2.947342718559569,
+        2.9460754774650315,
+        2.9452277832416076,
+        2.944305883887086,
+        2.943506844499506,
+        2.944932416171365,
+        2.9438317375553504,
+        2.9428112912632702,
+        2.943128527338786,
+        2.9431560652111495,
+        2.942007034291861,
+        2.941588213862566,
+        2.941539287464382,
+        2.941103831205876,
+        2.9421468321078725,
+        2.941576314798221,
+        2.940397911846705,
+        2.9394763914741597,
+        2.9390444979341024,
+        2.9389725057477296,
+        2.9382066807772302,
+        2.9376262303673286,
+        2.9376371490281965,
+        2.9375536782791976,
+        2.9379710821738385,
+        2.937477385808684,
+        2.937180940991791,
+        2.937285630354708,
+        2.9374954282180332,
+        2.9372692482937506,
+        2.9370303677406033,
+        2.9369523482260584,
+        2.936862028359948,
+        2.9367967448180226,
+        2.93683360513097,
+        2.936811080686068,
+        2.93677562979717,
+        2.9367789864697,
+        2.9367300929780664,
+        2.9366360278499335,
+        2.9364621133255477,
+        2.9361393104839544,
+        2.9357309791891613,
+        2.93539081751482,
+        2.935134061469717,
+        2.9347547990886236,
+        2.9358189506575942,
+        2.934901344092177,
+        2.9344635988053174,
+        2.9343508186655543,
+        2.9341233035191525,
+        2.93406375271846,
+        2.9337649098302867,
+        2.933672237841485,
+        2.9336601504642337,
+        2.933536987662425,
+        2.9334580329808073,
+        2.933382424223036,
+        2.933541372093253,
+        2.933367255463926,
+        2.933315182625588,
+        2.9332583363283966,
+        2.9332058876499163,
+        2.9331587819952754,
+        2.933090262029002,
+        2.933006751476116,
+        2.932946052700305,
+        2.932942646249265,
+        2.932949483690212,
+        2.9329371827860595,
+        2.9328745592309815,
+        2.9327716272882185,
+        2.9327198124757814,
+        2.9326488208985735,
+        2.9325693103669757,
+        2.932554261492098,
+        2.932607250176773,
+        2.93251577690258,
+        2.932490150956168,
+        2.9324389962737776,
+        2.9324036403240594,
+        2.932385554043302,
+        2.932335701564935,
+        2.9322940409645835,
+        2.932278099823563,
+        2.9322510458586857,
+        2.9322345082930634,
+        2.9321998364105335,
+        2.9321660484239933,
+        2.932137102712449,
+        2.9321125685611413,
+        2.932085614937487,
+        2.9320594392982664,
+        2.932024331136983,
+        2.9319582942213436,
+        2.931880299043801,
+        2.9317573626025064,
+        2.9320766067090718,
+        2.9318363689387765,
+        2.931764735884898,
+        2.9317581344736716,
+        2.9317595519844337,
+        2.93176819670843,
+        2.931760384942372,
+        2.931732932802653,
+        2.9317127664255342,
+        2.9316822315998445,
+        2.9316681178182575,
+        2.9316199090663337,
+        2.931650626160261,
+        2.9316310015400626,
+        2.931594470688082,
+        2.9315772055741265,
+        2.9315946374212887,
+        2.9315886222995364,
+        2.931574777210428,
+        2.931564164916613,
+        2.9315618820211,
+        2.9315884038096174,
+        2.931564228229044,
+        2.931537397428561,
+        2.9315199476168523,
+        2.9315336339738467,
+        2.9315200137106703,
+        2.9315077732693107,
+        2.931491402536138,
+        2.931486453821467,
+        2.9314645953037637,
+        2.9314560792446893,
+        2.931453424299403,
+        2.9314370629848456,
+        2.931442157529893,
+        2.931430905410493,
+        2.931413833967836,
+        2.9314009572712934,
+        2.931405619289269,
+        2.931406312571287,
+        2.931394848133287,
+        2.931408768252201,
+        2.9314002288251713,
+        2.9313824822771304,
+        2.931382111929101,
+        2.9313787038261663,
+        2.9313828353983986,
+        2.9313951063108457,
+        2.931382679566976,
+        2.931378243493991,
+        2.9313556482277763,
+        2.9313511091638427,
+        2.9313582662763498,
+        2.9313426164931826,
+        2.931354326396323,
+        2.93134583229683,
+        2.931329944642178,
+        2.931330149994433,
+        2.931339822618286,
+        2.931318315675501,
+        2.9313235136325746,
+        2.9313242886691784,
+        2.9313082811566864,
+        2.9313124055547535,
+        2.9313060985965564,
+        2.9312981393433337,
+        2.9313005033246498,
+        2.9313045379528786,
+        2.931300470369753,
+        2.9312976934838044,
+        2.9313118203037547,
+        2.93130410170337,
+        2.9312846292556474
+      ],
+      "probabilities": [
+        0.0005294768242476132,
+        0.0035816139921113262,
+        0.0011843289370097594,
+        0.0033868757376691485,
+        0.0011843289370097561,
+        0.003386875737669164,
+        0.0037075469957975646,
+        0.0032042184615022123,
+        0.0026010588106257842,
+        0.0009846912804382826,
+        0.0015370308787629287,
+        0.07850093601180695,
+        0.0015370308787629114,
+        0.07850093601180695,
+        0.0656332592239376,
+        0.0002193185185463327,
+        0.004330233509941869,
+        0.0031057520518854944,
+        0.0008619022065867434,
+        0.002705272315597301,
+        0.0008619022065867348,
+        0.002705272315597297,
+        0.0011854990872502038,
+        0.0006235248960643949,
+        0.2022689557553497,
+        0.025985661933465246,
+        0.019497203714771125,
+        0.0005062617703467284,
+        0.01949720371477114,
+        0.0005062617703467269,
+        7.160953948376945e-05,
+        0.0010846398403082163,
+        0.0010134352860642923,
+        0.0006562464829777835,
+        0.000817361014383104,
+        0.08449376146097241,
+        0.0008173610143831008,
+        0.08449376146097239,
+        0.0709504192833748,
+        2.9046615103585897e-05,
+        0.0018965380461318279,
+        0.00014029926515006695,
+        8.227036143135226e-05,
+        0.0002045640953380196,
+        8.227036143135245e-05,
+        0.00020456409533802246,
+        0.0008163999956279933,
+        0.0001777317072762309,
+        0.0025675599701767337,
+        0.07135568578455453,
+        0.060359351567148646,
+        6.98971784968802e-05,
+        0.06035935156714863,
+        6.989717849688043e-05,
+        0.0005073181176598673,
+        0.0014554915529998162,
+        0.020504833958148398,
+        0.00012802008542278653,
+        1.0969426700776466e-05,
+        0.00010266411181667439,
+        1.0969426700776639e-05,
+        0.00010266411181667408,
+        9.968703621917587e-06,
+        3.264284707584166e-05
+      ],
+      "gate_counts": {
+        "h": 6,
+        "rx": 18,
+        "rz": 78,
+        "cx": 138
+      },
+      "compiled_depth": 127,
+      "optimal_probability": 0.2022689557553497,
+      "dominating_probability": 0.9487222221367531
+    }
+  ]
+}
