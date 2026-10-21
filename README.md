@@ -12,9 +12,7 @@ Information stops after one hop. Paying Mario informs Mario, Sarah, Raúl and An
 
 The closed neighborhood of a person $v$ is that person together with their friends,
 
-$$
-N[v] = \{v\} \cup \{u : \{u, v\} \in E\}.
-$$
+$$N[v] = \{v\} \cup \{u : \{u, v\} \in E\}.$$
 
 Hiring $v$ covers exactly $N[v]$.
 
@@ -26,9 +24,7 @@ The matrix is the whole diffusion rule. The diagonal is dark because a hired per
 
 Let $x_v = 1$ when person $v$ is hired. With one unit of cost per hire and a penalty $B$ for each person left unreached,
 
-$$
-C(\mathbf{x}) = \sum_v x_v + B \sum_v \prod_{u \in N[v]} (1 - x_u).
-$$
+$$C(\mathbf{x}) = \sum_v x_v + B \sum_v \prod_{u \in N[v]} (1 - x_u).$$
 
 The product equals 1 only when every variable in $N[v]$ is 0, so a plan that reaches everyone pays only for the people it hires. The case uses $B = 2$.
 
@@ -50,9 +46,7 @@ On this network the curves meet at $B = 1/2$. Hiring only Mario costs $1 + 2B$, 
 
 The right-hand graphs are a 4-cycle, where the shape of the penalty matters. The squared penalty
 
-$$
-\sum_v \left(1 - \sum_{u \in N[v]} x_u\right)^2
-$$
+$$\sum_v \left(1 - \sum_{u \in N[v]} x_u\right)^2$$
 
 is zero only when each person is reached by exactly one hire. Its ground states on the cycle hire a single vertex. The opposite vertex is not a friend of that vertex, so the product never arrives. The product penalty used above has ground states that hire two vertices, and every such pair reaches the cycle.
 
@@ -62,11 +56,9 @@ On the advertising network the two penalties share the ground state. Ana and Enr
 
 On a computational-basis state the substitution
 
-$$
-x_q = \frac{I - Z_q}{2}
-$$
+$$x_q = \frac{I - Z_q}{2}$$
 
-turns $C$ into a diagonal operator $H_C$. A product of variables becomes a product of factors $(I - Z)/2$, so the Pauli strings have weight at most $|N[v]|$. Qubit $q$ is person $q$. No slack qubits are added. The identity coefficient is $4.625$, a shift shared by every plan; the figure leaves it out. Shifting every plan by the same amount does not change which plan is cheapest, and it does not change the QAOA layers beyond a global phase.
+turns $C$ into a diagonal operator $H_C$. A product of variables becomes a product of factors $(I - Z)/2$, so the Pauli strings have weight at most $\lvert N[v]\rvert$. Qubit $q$ is person $q$. No slack qubits are added. The identity coefficient is $4.625$, a shift shared by every plan; the figure leaves it out. Shifting every plan by the same amount does not change which plan is cheapest, and it does not change the QAOA layers beyond a global phase.
 
 ![Coefficients of the 26 non-identity Pauli terms in the cost operator, grouped by weight.](figures/05_hamiltonian.png)
 
@@ -76,22 +68,13 @@ Six terms have weight 1, eleven have weight 2, eight have weight 3, and one has 
 
 QAOA prepares, at depth $p$,
 
-$$
-|\boldsymbol{\beta}, \boldsymbol{\gamma}\rangle
-=
-\prod_{\ell=1}^{p}
-e^{-i \beta_\ell H_M}
-e^{-i \gamma_\ell H_C}
-|+\rangle^{\otimes n},
-\qquad
-H_M = \sum_q X_q.
-$$
+$$\lvert\boldsymbol{\beta}, \boldsymbol{\gamma}\rangle = \prod_{\ell=1}^{p} e^{-i \beta_\ell H_M}\, e^{-i \gamma_\ell H_C}\, \lvert+\rangle^{\otimes n}, \qquad H_M = \sum_q X_q.$$
 
 $H_C$ in the circuit is the non-identity part of the cost operator. Each mixer rotation is $R_X(2\beta)$, because $R_X(\theta) = e^{-i \theta X / 2}$.
 
 ![One QAOA layer on the six people, and the gate counts after translation to H, Rx, Rz and CX.](figures/06_qaoa_layer.png)
 
-The six Hadamard gates prepare $|+\rangle^{\otimes 6}$ and are not repeated. Each added layer contributes mixer $R_X$ gates and a cost-layer expansion into $R_Z$ and CX. At three layers the translated circuit contains 6 Hadamards, 18 $R_X$, 78 $R_Z$ and 138 CX gates.
+The six Hadamard gates prepare $\lvert+\rangle^{\otimes 6}$ and are not repeated. Each added layer contributes mixer $R_X$ gates and a cost-layer expansion into $R_Z$ and CX. At three layers the translated circuit contains 6 Hadamards, 18 $R_X$, 78 $R_Z$ and 138 CX gates.
 
 The angles are chosen by minimizing the exact expectation of $H_C$ in the statevector of the circuit. Each restart draws $\beta \in [0, \pi]$ and $\gamma \in [0, 2\pi]$, then runs COBYLA for up to 250 evaluations. The run uses 40 restarts and seed 7, the same budget at every depth.
 
