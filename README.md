@@ -1,6 +1,6 @@
-# Who carries a product through a six-person network
+# Who carries a product through a six-person network: a quantum QAOA calculation
 
-A product has to reach six people linked by reciprocal friendships. Paying someone spreads it to that person and to their friends, and no further. The cheapest plan is a minimum dominating set of the graph.
+One-hop coverage on a six-vertex undirected graph is a minimum dominating set. The cost counts selected vertices and adds a penalty for each vertex with an empty closed neighborhood. The polynomial is the diagonal of a Pauli Hamiltonian, and its expectation is minimized by the quantum approximate optimization algorithm (QAOA).
 
 ## The network
 
@@ -160,4 +160,4 @@ Lucas, A. (2014). Ising formulations of many NP problems. Frontiers in Physics, 
 
 ## Archived statement
 
-The problem statement and the written report are kept under their original filenames: [`act_3_grupal.docx`](references/act_3_grupal.docx) and [`Alg_Cuánticos___Actividad_Grupal.pdf`](references/Alg_Cuánticos___Actividad_Grupal.pdf).
+The problem statement and the written report are kept under their original filenames: [`act_3_grupal.docx`](docs/act_3_grupal.docx) and [`Alg_Cuánticos___Actividad_Grupal.pdf`](docs/Alg_Cuánticos___Actividad_Grupal.pdf).
